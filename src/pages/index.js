@@ -7,6 +7,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import HeroSection from "@/components/HeroSection";
+import Skills from "@/components/Skills";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <HeroSection />
+        <Skills />
       </main>
     </>
   );
