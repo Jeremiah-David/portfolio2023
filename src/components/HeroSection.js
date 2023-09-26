@@ -7,38 +7,66 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <Container fluid className="hero-section p-5">
-      <Row className="gy-5">
-        <Col>
-          <h1 className="display-1 content-section ">Jeremiah David</h1>
+    <Container fluid className="hero-section p-4">
+      <Row className="g-3">
+        <Col className="text-center" md={6}>
+          <div className="image-container text-center">
+            <Image
+              src="/logoblue.png"
+              fill={true}
+              // objectFit="cover"
+              alt="logo"
+            />
+          </div>
+        </Col>
+
+        <Col md={6}>
+          <div className="content-section ">
+            {" "}
+            <h3 className="display-5 p-1">Tech Skills and Stacks </h3>
+            <h4 className="p-2">
+              HTML5 | CSS3 | JavaScript | React | Next | Content Management
+              Systems | AWS EC2 S3 RDS | SQL | MongoDB | Excel | Tableau | MERN
+              Stack | Front End | Back End
+            </h4>
+            <h3 className="display-5 p-1">Team Skills</h3>
+            <h4 className="p-2">
+              Skills Cross-cultural communication and team communication |
+              Empathy | Emotional intelligence | Ability to effectively
+              collaborate | Adaptability | Problem-solving | Critical thinking
+            </h4>
+          </div>
+        </Col>
+        <Col className="text-center" md={6}>
           <h4 className="display-4 content-section">
             Building Digital Worlds, One Code at a Time: Freelance Web
             Developer, Tech Educator, Proud Dad, and AWS Solutions Architect in
             Training
           </h4>
         </Col>
-        <Col className="content-section mx-2">
-          <h5>Full Stack Developer Tech Skills and Stacks </h5>
-          <h5>
-            HTML5 | CSS3 | JavaScript | React | Next | Content Management
-            Systems | AWS EC2 S3 RDS | SQL | MongoDB | Excel | Tableau | MERN
-            Stack | Front End | Back End
-          </h5>
-          <h5>Team Skills</h5>
-          <h5>
-            Skills Cross-cultural communication and team communication | Empathy
-            | Emotional intelligence | Ability to effectively collaborate |
-            Adaptability | Problem-solving | Critical thinking
-          </h5>
-        </Col>
-
-        <Col className="content-section mx-2">
-          <Image
-            src="/headshot.png"
-            alt="Picture of the author"
-            width={500}
-            height={500}
-          />
+        <Col className="text-center" md={6}>
+          <div className="content-section">
+            <h4 className="display-6 p-2">Services</h4>
+            <h5 className="p-2">
+              Website Design and Development: Modern and responsive websites. I
+              specialize in HTML5, CSS3, JavaScript, React, and Next.js.{" "}
+            </h5>
+            <h5 className="p-2">
+              Content Management Systems (CMS): Custom Content Management
+              Systems using tools like Strapi. CMS solutions make it easy for
+              clients to manage and update their website content.
+            </h5>
+            <h5 className="p-2">
+              Cloud Infrastructure and Hosting: Deploy websites on Amazon Web
+              Services (AWS), including using EC2 for hosting, S3 buckets for
+              file storage, and RDS for data management. Focus on security and
+              data integrity.
+            </h5>
+            <h5 className="p-2">
+              Database Management: Expertise in working with databases,
+              including SQL and MongoDB.{" "}
+            </h5>
+          </div>
         </Col>
       </Row>
     </Container>

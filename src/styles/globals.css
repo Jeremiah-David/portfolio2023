@@ -3,12 +3,13 @@
   --blue-main: #1b03a3;
   --pink-main: #ff0088;
   --teal-main: #00ffc8;
-  --yellow-main: #ffc857;
+  --yellow-main: hwb(40 34% 0%);
+  --turq-main: #00e0ff;
 }
 
 body {
   background-color: var(--black-main);
-  color: var(--teal-main);
+  color: var(--turq-main);
   font-family: "Roboto Mono", monospace;
   font-size: 16px;
   margin: 0;
@@ -16,14 +17,28 @@ body {
 }
 
 .hero-section {
+  /* height: 96vh; */
 }
 
 .hero-section .content-section {
   /* box-sizing: border-box; */
-  border: 3px solid var(--teal-main);
+  border: 3px solid var(--yellow-main);
   border-radius: 10px;
+  height: 100%;
 }
 
 h1 {
-  color: var(--teal-main);
+  color: var(--turq-main);
+}
+
+.image-container {
+  position: relative;
+  width: 25vw;
+  height: 25vw;
+  margin: auto;
+}
+
+.project-section {
+  background-color: var(--turq-main);
+  color: var(--yellow-main);
 }
