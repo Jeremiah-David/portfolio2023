@@ -8,16 +8,16 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <Container fluid className="hero-section p-5">
-      <Row className="gy-5">
-        <Col>
+      <Row className="gy-5 d-flex justify-content-between">
+        <Col className=" justify-content-between">
           <h1 className="display-1 content-section ">Jeremiah David</h1>
-          <h4 className="display-4 content-section">
+          <h6 className="content-section p-2 align-self-end flex-grow-1 mt-auto">
             Building Digital Worlds, One Code at a Time: Freelance Web
             Developer, Tech Educator, Proud Dad, and AWS Solutions Architect in
             Training
-          </h4>
+          </h6>
         </Col>
-        <Col className="content-section mx-2">
+        <Col className="content-section mx-2 ">
           <h5>Full Stack Developer Tech Skills and Stacks </h5>
           <h5>
             HTML5 | CSS3 | JavaScript | React | Next | Content Management

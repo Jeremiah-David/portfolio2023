@@ -1,14 +1,14 @@
 :root {
   --black-main: #070707;
-  --blue-main: #1b03a3;
+  --blue-main: #E5A04B;
   --pink-main: #ff0088;
-  --teal-main: #00ffc8;
-  --yellow-main: #ffc857;
+  --lighter-yellow-main: #E5A04B;
+  --darker-yellow-main: #A95B1F;
 }
 
 body {
   background-color: var(--black-main);
-  color: var(--teal-main);
+  color: teal;
   font-family: "Roboto Mono", monospace;
   font-size: 16px;
   margin: 0;
@@ -20,10 +20,10 @@ body {
 
 .hero-section .content-section {
   /* box-sizing: border-box; */
-  border: 3px solid var(--teal-main);
+  border: 3px solid teal;
   border-radius: 10px;
 }
 
 h1 {
-  color: var(--teal-main);
+  color: var(--darker-yellow-main)
 }
