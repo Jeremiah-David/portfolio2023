@@ -7,16 +7,11 @@ function NavBar() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary" data-bs-theme="dark">
       <Container>
-        
         <Navbar.Brand href="#home">
-          <div className=" d-inline-block w-25 h-100"><Image
-          
-          fill={true}
-          objectFit= "contain"
-          src="/logo.png">
-        
-          </Image>
-        </div></Navbar.Brand>
+          <div className=" d-inline-block w-25 h-100">
+            <Image fill={true} objectFit="contain" src="/logoblue.png"></Image>
+          </div>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

@@ -1,14 +1,14 @@
 :root {
   --black-main: #070707;
-  --blue-main: #E5A04B;
+  --blue-main: #5ce1e6;
   --pink-main: #ff0088;
-  --lighter-yellow-main: #E5A04B;
-  --darker-yellow-main: #A95B1F;
+  --lighter-yellow-main: #e5a04b;
+  --darker-yellow-main: #a95b1f;
 }
 
 body {
   background-color: var(--black-main);
-  color: teal;
+  color: var(--lighter-yellow-main);
   font-family: "Roboto Mono", monospace;
   font-size: 16px;
   margin: 0;
@@ -23,20 +23,16 @@ body {
 .skill-section .content-section {
   /* box-sizing: border-box; */
   border-radius: 10px;
+  border: 4px inset var(--blue-main);
 }
 
-h1, h2 {
-  color: var(--darker-yellow-main)
-}
-
-h1 {
-  color: var(--darker-yellow-main)
+h1,
+h2 {
+  color: var(--lighter-yellow-main);
 }
 
 .name {
-  
-  background-color: rgba(0,0,0,.9);
-
+  background-color: rgba(0, 0, 0, 0.9);
 }
 #fireback {
   width: 100%;
@@ -47,7 +43,7 @@ h1 {
   object-fit: cover;
   z-index: -1;
 }
-
+/* 
 .overlay {
   background-color: rgba(0,0,0,.9);
   width: 100%;
@@ -55,4 +51,4 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
-}
+} */
