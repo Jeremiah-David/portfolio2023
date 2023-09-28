@@ -8,6 +8,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import HeroSection from "@/components/HeroSection";
 import Projects from "@/components/Projects";
+import Services from "@/components/Services";
+import Contact from "@/components/Contact";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +24,9 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <HeroSection />
+        <Services />
         <Projects />
+        <Contact />
       </main>
     </>
   );
