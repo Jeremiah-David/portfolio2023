@@ -1,20 +1,21 @@
 import { Container, Col } from "react-bootstrap";
 import Image from "next/image";
+import ProjectCarousel from ".//ProjectCarousel";
 
 export default function Projects() {
   return (
-    <Container fluid className="projects-section mt-5 p-5">
+    <Container fluid className="projects-section my-5 p-5 border-black">
       <div className="row projects-row">
         <Col className="projects-text " md={12}>
-          <h4 className="display-2 w-100 pt-3  pe-5 content-section text-end">
-            Projects
+          <h4 className="display-5 w-100 py-3    content-section text-start">
+            My Web Development Story
           </h4>
         </Col>
         <Col className="content-section p-2   projects-text ">
           <div className="row">
             <Col
               className="projects-text d-flex flex-column justify-content-center align-items-center"
-              md={6}
+              md={12}
             >
               <h4 className="d-flex align-self-center flex-column">
                 Project 1
@@ -33,17 +34,10 @@ export default function Projects() {
                 veniam, quis nostrud
               </h5>
             </Col>
-            <Col className=" " md={6}>
-              <div className="image-container ">
-                <Image
-                  id="hero-image"
-                  src="/logoblue.png"
-                  fill={true}
-                  alt="logo"
-                />
-              </div>
+            <Col className=" " md={12}>
+              {/* <ProjectCarousel /> */}
             </Col>
-            <Col className=" " md={6}>
+            <Col className=" " md={12}>
               <div className="image-container ">
                 <Image
                   id="hero-image"
@@ -55,7 +49,7 @@ export default function Projects() {
             </Col>
             <Col
               className="projects-text d-flex flex-column d-flex flex-column align-items-center projects-text d-flex flex-column justify-content-center align-items-center"
-              md={6}
+              md={12}
             >
               <h4 className="d-flex align-self-center justify-self-center">
                 Project 2
@@ -76,8 +70,8 @@ export default function Projects() {
             </Col>
 
             <Col
-              className="projects-text d-flex flex-column projects-text d-flex flex-column justify-content-center align-items-center"
-              md={6}
+              className="projects-text d-flex flex-column projects-text d-flex flex-column justify-content-center align-items-center "
+              md={12}
             >
               <h4 className="d-flex align-self-center justify-self-center">
                 Project 3
@@ -96,7 +90,7 @@ export default function Projects() {
                 veniam, quis nostrud
               </h5>
             </Col>
-            <Col className=" " md={6}>
+            <Col className=" " md={12}>
               <div className="image-container ">
                 <Image
                   id="hero-image"

@@ -1,12 +1,14 @@
 import { Container, Col, Row } from "react-bootstrap";
+import ServicesCard from "./ServicesCard";
 export default function Services() {
   return (
-    <Container fluid className="services-section position-relative pb-5 px-5">
+    <Container
+      fluid
+      className="services-section position-relative pb-5 px-5 border-yellow yellow-left"
+    >
       <div className=" row align-items-start services-row flex-row">
         <Col className=" services-text" md={12}>
-          <h4 className="display-2 w-100 pt-3 ps-3 content-section">
-            Services
-          </h4>
+          <h4 className="display-5  text-start content-section">Services</h4>
         </Col>
         <Col className="content-section p-2   services-text " md={6}>
           <h4 className="">Website Design and Development</h4>

@@ -1,27 +1,18 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import NavBar from "./Navbar";
 // import headshot from ";
 
 import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <Container fluid className="hero-section p-4">
-      <Row className="p-5  text-center justify-items-center row d-flex align-self-center hero-row">
-        <Col className="text-center d-flex  align-self-center" md={5}>
-          <div className="image-container text-center d-flex align-self-center  justify-self-end ms-auto hero-image-container">
-            <Image
-              id="hero-image"
-              src="/logoblue.png"
-              fill={true}
-              // objectFit="cover"
-              alt="logo"
-            />
-          </div>
-        </Col>
-
-        {/* <Col md={6}>
+    <>
+      <NavBar />{" "}
+      <Container fluid className="hero-section p-4">
+        <Row className="p-5  text-center justify-items-center row d-flex align-self-center hero-row">
+          {/* <Col md={6}>
           <div className="content-section ">
             {" "}
             <h3 className="display-5 p-1">Tech Skills and Stacks </h3>
@@ -39,14 +30,24 @@ export default function HeroSection() {
           </div>
         </Col> */}
 
-        <Col className="text-center d-flex  align-self-center" md={7}>
-          <h4 className="display-4 content-section  d-flex  align-self-center p-4">
-            Building Digital Worlds, One Code at a Time: Freelance Web
-            Developer, Tech Educator, Proud Dad, and AWS Solutions Architect in
-            Training
-          </h4>
-        </Col>
-        {/*
+          <Col
+            className="text-center d-flex  align-self-center flex-column "
+            md={7}
+          >
+            <h3 className="display-6   d-flex  align-self-center p-2">
+              Welcome Friend
+            </h3>
+            <h4 className="display-6   d-flex  align-self-center p-2">
+              I'm Jeremiah. I build websites and web applications, teach and
+              mentor, and offer a variety of web based solutions.
+            </h4>
+            <a href="#contact">
+              <button type="button" class="btn contact-button">
+                Contact Me
+              </button>
+            </a>
+          </Col>
+          {/*
         <Col className="text-center" md={6}>
           <div className="content-section">
             <h4 className="display-6 p-2">Services</h4>
@@ -71,7 +72,8 @@ export default function HeroSection() {
             </h5>
           </div>
         </Col> */}
-      </Row>
-    </Container>
+        </Row>
+      </Container>
+    </>
   );
 }
