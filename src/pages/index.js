@@ -27,7 +27,7 @@ export default function Home() {
       <main className={styles.main}>
         <Container fluid>
           {" "}
-          <Row>
+          <Row className="index-row">
             <Col md={6} fluid className="hero-wrapper">
               <HeroSection />
             </Col>
