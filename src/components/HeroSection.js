@@ -29,8 +29,8 @@ export default function HeroSection() {
           <Col className="text-start m-auto" md={7}>
             <h3 className="display-6  ">Welcome Friend</h3>
             <h4 className="display-6  ">
-              I'm Jeremiah. I build, deploy, and manage websites and web
-              applications, teach, and mentor. Let's make somthing great.
+              I{"'"}m Jeremiah. I build, deploy, and manage websites and web
+              applications, teach, and mentor. Let{"'"}s make somthing great.
             </h4>
             <a href="#contact">
               <button type="button" class="btn contact-button">
