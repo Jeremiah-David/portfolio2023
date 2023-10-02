@@ -7,6 +7,8 @@ import NavBar from "./Navbar";
 export default function HeroSection() {
   return (
     <>
+      <NavBar />
+      <Container className="p-5">
             <h4>
               Welcome Friend
             </h4>
@@ -21,7 +23,7 @@ export default function HeroSection() {
  
        
 
-
+</Container>
     </>
   );
 }
