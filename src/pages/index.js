@@ -25,13 +25,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <NavBar />
         <Container fluid>
           {" "}
           <Row className="index-row">
-            <Col md={6} fluid className="hero-wrapper">
+            <Col md={5} fluid className="hero-wrapper">
               <HeroSection />
             </Col>
-            <Col md={6} fluid className="everything-else-wrapper g-0">
+            <Col md={7} fluid className="everything-else-wrapper g-0">
               <Services />
               <Projects />
               <Contact />

@@ -7,11 +7,6 @@
   --turq-main: #00e0ff;
 }
 
-.nav {
-  background-color: var(--black-main) !important;
-  color: var(--turq-main) !important;
-}
-
 body {
   background-color: var(--black-main);
   color: var(--turq-main);
@@ -20,13 +15,37 @@ body {
   font-family: "Playfair Display", serif;
   font-size: 16px;
   margin: 0;
-  padding: 0;
+  padding-top: 80px;
 }
 
-.hero-wrapper {
+.navbar {
+  background-color: var(--black-main) !important;
+  color: var(--turq-main) !important;
+  margin: 0px;
+  z-index: 1000;
+  width: 100%;
   position: fixed;
-  top: 0px;
-  left: 0;
+  top: 0;
+  margin-top: -3px;
+  margin-left: -3px;
+  padding-bottom: 0px;
+  width: 102vw;
+}
+
+/* .bg-dark {
+  background-color: var(--black-main) !important;
+  color: var(--turq-main) !important;
+  margin: 0px;
+} */
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .hero-wrapper {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    padding: 0px;
+  }
 }
 
 .everything-else-wrapper {
@@ -48,6 +67,7 @@ body {
 
 .hero-section .content-section,
 .border-black {
+  margin-right: -3px;
   --border-size: 3px;
   --border-angle: 0turn;
   background-image: conic-gradient(
@@ -58,12 +78,14 @@ body {
     ),
     conic-gradient(
       from var(--border-angle),
-      transparent 10%,
+      transparent 50%,
+      var(--yellow-main),
+      transparent 50%,
       var(--turq-main),
-      /* var(--yellow-main), */ var(--yellow-main)
+      var(--yellow-main)
     );
   background-size: calc(100% - (var(--border-size) * 1.3))
-      calc(100% - (var(--border-size) * 1.3)),
+      calc(101% - (var(--border-size) * 1.3)),
     cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -72,6 +94,9 @@ body {
 }
 
 @keyframes bg-spin {
+  0% {
+    --border-angle: 0turn;
+  }
   to {
     --border-angle: 1turn;
   }
@@ -84,11 +109,11 @@ body {
 @property --border-angle {
   syntax: "<angle>";
   inherits: true;
-  initial-value: 0turn;
+  initial-value: 90turn;
 }
 
 .index-row {
-  padding: 0xp;
+  padding: 0px;
 }
 
 h1 {
@@ -112,9 +137,7 @@ h1 {
   object-position: center;
 }
 
-.services-section .content-section {
-  border: 3px solid var(--yellow-main);
-  border-radius: 10px;
+.services-section {
 }
 
 .services-text {
@@ -124,33 +147,21 @@ h1 {
 }
 
 .yellow-left {
-  /* border: 2px ridge var(--turq-main); */
   color: var(--black-main);
   background-color: var(--yellow-main);
-
-  max-width: 96vw;
 }
 
-/* .services-wrapper {
-  border: none;
-  position: absolute;
-  width: 95vw;
-  left: 0;
-  margin-right: 5vw;
-  z-index: -1;
-} */
-
 .projects-section {
-  /* height: 96vh; */
   color: white;
   background-color: var(--black-main);
-  /* border: ridge var(--yellow-main); */
-  border-width: 5px 0px 5px 5px;
 
-  max-width: 50vw;
-
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 5px 5px 5px 5px;
   color: var(--turq-main);
+}
+
+#projects-section-y-wrapper {
+  background-color: var(--black-main);
+  width: 122%;
 }
 
 .contact-button {
@@ -160,4 +171,9 @@ h1 {
 
 .contact-button:hover {
   color: var(--turq-main) !important;
+}
+
+.card {
+  background-color: #e5a04b;
+  border-radius: 0px;
 }

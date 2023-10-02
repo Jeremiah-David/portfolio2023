@@ -8,11 +8,11 @@ function NavBar() {
   return (
     <Navbar
       expand="lg"
-      className="bg-body-tertiary"
+      className="bg-body-tertiary border-black"
       bg="dark"
       data-bs-theme="dark"
     >
-      <Container>
+      <Container className="ms-5">
         <Navbar.Brand href="#home">
           {/* <div className="image-container text-center d-flex align-self-center  justify-self-end ms-auto hero-image-container"> */}
           <Image
@@ -27,7 +27,7 @@ function NavBar() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="ms-ato">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">Link</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">

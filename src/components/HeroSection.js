@@ -9,7 +9,6 @@ import Image from "next/image";
 export default function HeroSection() {
   return (
     <>
-      <NavBar />{" "}
       <Container fluid className="hero-section p-4">
         <Row className="p-5  text-center justify-items-center row d-flex align-self-center hero-row">
           {/* <Col md={6}>
@@ -30,16 +29,11 @@ export default function HeroSection() {
           </div>
         </Col> */}
 
-          <Col
-            className="text-center d-flex  align-self-center flex-column "
-            md={7}
-          >
-            <h3 className="display-6   d-flex  align-self-center p-2">
-              Welcome Friend
-            </h3>
-            <h4 className="display-6   d-flex  align-self-center p-2">
-              I'm Jeremiah. I build websites and web applications, teach and
-              mentor, and offer a variety of web based solutions.
+          <Col className="text-start m-auto" md={7}>
+            <h3 className="display-6  ">Welcome Friend</h3>
+            <h4 className="display-6  ">
+              I'm Jeremiah. I build, deploy, and manage websites and web
+              applications, teach and mentor. Let's make somthing great.
             </h4>
             <a href="#contact">
               <button type="button" class="btn contact-button">
