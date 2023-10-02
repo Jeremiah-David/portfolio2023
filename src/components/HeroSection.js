@@ -1,29 +1,39 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import NavBar from "./Navbar";
 // import headshot from ";
 
 import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <Container fluid className="hero-section px-5 pt-5 text-center">
+    <>
+      <NavBar />
+      <Container fluid className="hero-section p-4">
+        <Row className="">
 
-      <Row className="gy-5 d-flex justify-content-between flex-column">
-      <div className="overlay">
-        <Col className=" justify-content-between">
-          <h1 className="display-1 content-section ">Jeremiah David</h1>
-        </Col>
-        
-            <Col className=" justify-content-between">
-          <h6 className="content-section p-2 align-self-end flex-grow-1 mt-auto">
-            Building Digital Worlds, One Code at a Time: Freelance Web
-            Developer, Tech Educator, Proud Dad, and AWS Solutions Architect in
-            Training
-          </h6>
-        </Col>
-       </div>
-      </Row>
-    </Container>
+
+          <Col
+            className=" "
+            md={7}
+          >
+            <h4 className="  ">
+              Welcome Friend
+            </h4>
+            <h4 className="">
+              I'm Jeremiah. I build websites and web applications, teach and
+              mentor, and offer a variety of web based solutions.
+            </h4>
+            <a href="#contact">
+              <button type="button" class="btn contact-button">
+                Contact Me
+              </button>
+            </a>
+          </Col>
+       
+        </Row>
+      </Container>
+    </>
   );
 }

@@ -7,7 +7,12 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import HeroSection from "@/components/HeroSection";
-import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
+import Services from "@/components/Services";
+import Contact from "@/components/Contact";
+import AboutMe from "@/components/AboutMe";
+import NavBar from "@/components/Navbar";
+import { Nav, Navbar } from "react-bootstrap";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,8 +26,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <HeroSection />
-        <Skills />
+        <Container fluid>
+          {" "}
+          <Row className="index-row">
+            <Col md={6} fluid className="hero-wrapper">
+              <HeroSection />
+            </Col>
+            <Col md={6} fluid className="everything-else-wrapper g-0">
+              <Services />
+              <Projects />
+              < AboutMe/>
+              <Contact />
+            </Col>
+          </Row>
+        </Container>
       </main>
     </>
   );
