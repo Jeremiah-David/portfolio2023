@@ -158,6 +158,13 @@ h1 {
   width: 122%;
 }
 
+.contact-section {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 58.33333333%;
+}
+
 .contact-button {
   background-color: var(--yellow-main);
   color: var(--black-main);
@@ -175,4 +182,8 @@ h1 {
 
 .card-body {
   width: 80%;
+}
+
+.about-me-section {
+  margin-bottom: 239px !important;
 }
