@@ -5,7 +5,7 @@ export default function Contact() {
     <>
       <Container
         fluid
-        className="contact-section  border-yellow yellow-left p-3"
+        className="contact-section  border-yellow  p-3  border-black"
         id="contact"
       >
         <h3 className="display-5  text-start content-section">Contact Me</h3>

@@ -7,7 +7,7 @@ export default function Projects() {
     <Container fluid className="projects-section my-5 p-5 border-black">
       <div className="row projects-row">
         <Col className="projects-text " md={12}>
-          <h4 className="display-5 w-100 py-3    content-section text-start">
+          <h4 className="display-8 w-100 py-3    content-section text-start">
             My Web Development Story
           </h4>
         </Col>

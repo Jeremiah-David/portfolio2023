@@ -27,6 +27,7 @@ body {
   position: fixed;
   top: 0px;
   left: 0;
+  padding: 0px;
 }
 
 .everything-else-wrapper {
@@ -117,11 +118,7 @@ h1 {
   border-radius: 10px;
 }
 
-.services-text {
-  /* display: inline-block; */
-  /* height: 50vw; */
-  /* display: inline-block; */
-}
+
 
 .yellow-left {
   /* border: 2px ridge var(--turq-main); */
@@ -160,4 +157,12 @@ h1 {
 
 .contact-button:hover {
   color: var(--turq-main) !important;
+}
+
+
+.image-container-about-me {
+  position: relative;
+  width: 15vw;
+  height: 15vw;
+  /* margin: auto; */
 }
