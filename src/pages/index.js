@@ -10,6 +10,7 @@ import HeroSection from "@/components/HeroSection";
 import Projects from "@/components/Projects";
 import Services from "@/components/Services";
 import Contact from "@/components/Contact";
+import AboutMe from "@/components/AboutMe";
 import NavBar from "@/components/Navbar";
 import { Nav, Navbar } from "react-bootstrap";
 
@@ -35,6 +36,7 @@ export default function Home() {
             <Col md={7} fluid className="everything-else-wrapper g-0">
               <Services />
               <Projects />
+              < AboutMe/>
               <Contact />
             </Col>
           </Row>

@@ -6,16 +6,13 @@ import ProjectCard from "./ProjectsCard";
 export default function Projects() {
   return (
     <div id="projects-section-y-wrapper">
-      <Container fluid className="projects-section my-5 p-5 border-black">
+      <Container fluid className="projects-section my-2 py-2 border-black">
         <div className="row projects-row">
-          <Col className="projects-text " md={12}>
-            <h4 className="display-5 w-100 py-3    content-section text-start">
-              My Web Development Story
-            </h4>
-          </Col>
+          <Col className="projects-text " md={12}></Col>
           <Col className="content-section p-2   projects-text ">
             <div className="row">
               <Col className="projects-text" md={12}>
+                <h2 className="  content-section text-start">What I Do</h2>
                 <ProjectCard
                   header="Web Master, Pioneer Preperatory School"
                   text="As a seasoned Webmaster, I take pride in my role as the custodian of the digital realm, ensuring that websites 

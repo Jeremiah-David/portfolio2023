@@ -1,8 +1,8 @@
 export default function ProjectCard(props) {
   console.log(props);
   return (
-    <div class="card my-5">
-      <div class="card-body">
+    <div class="card my-2">
+      <div class="card-body p-0">
         <h5 class="card-title">{props.header}</h5>
         <h6 class="card-subtitle mb-2 text-body-secondary">
           {props.subheader}

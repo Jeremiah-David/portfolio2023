@@ -2,9 +2,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import NavBar from "./Navbar";
-// import headshot from ";
-
-import Image from "next/image";
 
 export default function HeroSection() {
   return (
@@ -33,7 +30,7 @@ export default function HeroSection() {
             <h3 className="display-6  ">Welcome Friend</h3>
             <h4 className="display-6  ">
               I'm Jeremiah. I build, deploy, and manage websites and web
-              applications, teach and mentor. Let's make somthing great.
+              applications, teach, and mentor. Let's make somthing great.
             </h4>
             <a href="#contact">
               <button type="button" class="btn contact-button">
@@ -41,31 +38,6 @@ export default function HeroSection() {
               </button>
             </a>
           </Col>
-          {/*
-        <Col className="text-center" md={6}>
-          <div className="content-section">
-            <h4 className="display-6 p-2">Services</h4>
-            <h5 className="p-2">
-              Website Design and Development: Modern and responsive websites. I
-              specialize in HTML5, CSS3, JavaScript, React, and Next.js.{" "}
-            </h5>
-            <h5 className="p-2">
-              Content Management Systems (CMS): Custom Content Management
-              Systems using tools like Strapi. CMS solutions make it easy for
-              clients to manage and update their website content.
-            </h5>
-            <h5 className="p-2">
-              Cloud Infrastructure and Hosting: Deploy websites on Amazon Web
-              Services (AWS), including using EC2 for hosting, S3 buckets for
-              file storage, and RDS for data management. Focus on security and
-              data integrity.
-            </h5>
-            <h5 className="p-2">
-              Database Management: Expertise in working with databases,
-              including SQL and MongoDB.{" "}
-            </h5>
-          </div>
-        </Col> */}
         </Row>
       </Container>
     </>
