@@ -12,7 +12,7 @@ export default function Contact() {
           <Col>
             <div className="contact-text p-2">
               <h2 className="  content-section text-start">Contact Me</h2>
-              <p>Feel free to get in touch; I'd love to connect!</p>
+              <p>Feel free to get in touch; I{"'"}d love to connect!</p>
               <p>Email: jeremiahdavidftl@gmail.com</p>
 
               <div className="icon-box">
