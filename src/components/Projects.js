@@ -9,8 +9,11 @@ export default function Projects() {
       <div className="pt-5" id="projects"></div>
       <div className="pt-5" id="projects-padding"></div>
       <div id="projects-section-y-wrapper">
-        <Container fluid className="projects-section my-2 py-2 border-black">
-          <h2 className="  content-section text-start">What I Do</h2>
+        <Container
+          fluid
+          className="projects-section my-2 py-2 border-black-project"
+        >
+          <h2 className="   text-start">What I Do</h2>
           <ProjectCard
             header="Web Master, Pioneer Preperatory School"
             text="As a seasoned Webmaster, I take pride in my role as the custodian of the digital realm, ensuring that websites 
