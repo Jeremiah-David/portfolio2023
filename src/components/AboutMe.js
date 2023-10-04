@@ -12,7 +12,7 @@ export default function AboutMe() {
           <Col md={7}>
             <div className="m-auto d-flex align-items-center flex-column justify-content-center h-100">
               <h3>Meet Jeremiah</h3>
-              <h4 className="about-me-text d-flex justify-self-center align-items-center p-5">
+              <h4 className="about-me-text d-flex justify-self-center align-items-center px-5">
                 I am a Full Stack Engineer, Freelancer Web Developer, Tech
                 Educator, gamer, proud dad and currently working towards my AWS
                 Solutions Architect Certificate.
