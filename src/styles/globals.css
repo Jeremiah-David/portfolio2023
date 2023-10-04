@@ -1,6 +1,6 @@
 :root {
   --black-main: #070707;
-  --blue-main: #1b03a3;
+  --blue-main: #5ce1e6;
   --pink-main: #ff0088;
   --teal-main: #00ffc8;
   --yellow-main: #e5a04b;
@@ -78,6 +78,7 @@ body {
 
 .hero-section .content-section {
   border-radius: 10px;
+  border: 4px inset var(--blue-main);
 }
 
 .hero-section .content-section,
@@ -188,18 +189,22 @@ h1 {
   border-radius: 0px;
 }
 
+
 .card-body p,
 .card-body h5 {
   color: var(--white-main);
 }
 
-/* .icon-box {
-  width: 10vw;
-  padding: 5px;
-  font-size: 2rem;
-} */
+
 
 #contact i {
   padding-inline: 20px;
   color: var(--white-main);
+}
+.image-container-about-me {
+  position: relative;
+  width: 15vw;
+  height: 15vw;
+
+
 }
