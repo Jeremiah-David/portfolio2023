@@ -3,6 +3,8 @@ import { Container, Col, Row } from "react-bootstrap";
 export default function Contact() {
   return (
     <>
+      <div className="pt-5" id="contact"></div>
+      <div className="pt-5" id="contact-padding"></div>
       <Container
         fluid
         className="contact-section p-2 border-black "

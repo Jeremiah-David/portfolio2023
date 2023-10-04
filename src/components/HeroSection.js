@@ -18,8 +18,9 @@ export default function HeroSection() {
               skilled Full Stack Engineer on a large project, or anything in
               between, I{"'"}d love to connect!
             </h4>
-            <a href="#contact d-md-none">
-              <button type="button" class="btn contact-button  d-md-none pt-3">
+
+            <a href="#contact">
+              <button type="button" class="btn contact-button  d-md-none mt-3 ">
                 Contact Me
               </button>
             </a>

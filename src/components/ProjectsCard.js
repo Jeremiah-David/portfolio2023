@@ -1,5 +1,4 @@
 export default function ProjectCard(props) {
-  console.log(props);
   return (
     <div class="card my-2">
       <div class="card-body p-0">
