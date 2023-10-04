@@ -5,22 +5,25 @@
   --teal-main: #00ffc8;
   --yellow-main: #e5a04b;
   --turq-main: #00e0ff;
+  --white-main: #f7f7f7;
 }
 
 body {
   background-color: var(--black-main);
-  color: var(--turq-main);
+  /* color: var(--turq-main); */
+  color: var(--white-main);
   font-family: "Playfair Display", serif;
   font-family: "League Spartan", sans-serif;
   font-family: "Playfair Display", serif;
   font-size: 16px;
   margin: 0;
   padding-top: 80px;
+  overflow-x: hidden;
 }
 
 .navbar {
   background-color: var(--black-main) !important;
-  color: var(--turq-main) !important;
+  color: var(--white-main);
   margin: 0px;
   z-index: 1000;
   width: 100%;
@@ -32,19 +35,27 @@ body {
   width: 102vw;
 }
 
-/* .bg-dark {
-  background-color: var(--black-main) !important;
-  color: var(--turq-main) !important;
-  margin: 0px;
-} */
-
 @media only screen and (min-width: 768px) {
-  /* For desktop: */
   .hero-wrapper {
     position: fixed;
     top: 0px;
     left: 0;
     padding: 0px;
+  }
+
+  .contact-section {
+    position: fixed;
+    bottom: -5px;
+    right: 0px;
+    width: 58.33333333%;
+  }
+  .about-me-section {
+    margin-bottom: 239px !important;
+  }
+
+  #projects-section-y-wrapper {
+    background-color: var(--black-main);
+    /* width: 122%; */
   }
 }
 
@@ -85,7 +96,7 @@ body {
       var(--yellow-main)
     );
   background-size: calc(100% - (var(--border-size) * 1.3))
-      calc(101% - (var(--border-size) * 1.3)),
+      calc(103% - (var(--border-size) * 1.3)),
     cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -146,7 +157,7 @@ h1 {
 }
 
 .projects-section {
-  color: white;
+  color: var(--white-main);
   background-color: var(--black-main);
 
   border-radius: 5px 5px 5px 5px;
@@ -155,14 +166,7 @@ h1 {
 
 #projects-section-y-wrapper {
   background-color: var(--black-main);
-  width: 122%;
-}
-
-.contact-section {
-  position: fixed;
-  bottom: 0px;
-  right: 0px;
-  width: 58.33333333%;
+  /* width: 122%; */
 }
 
 .contact-button {
@@ -184,6 +188,22 @@ h1 {
   width: 80%;
 }
 
-.about-me-section {
-  margin-bottom: 239px !important;
+.card-body {
+  width: 80%;
+}
+
+.card-body p,
+.card-body h5 {
+  color: var(--white-main);
+}
+
+/* .icon-box {
+  width: 10vw;
+  padding: 5px;
+  font-size: 2rem;
+} */
+
+i {
+  padding-inline: 20px;
+  color: var(--white-main);
 }

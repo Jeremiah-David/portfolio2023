@@ -4,7 +4,7 @@ export default function Services() {
   return (
     <Container
       fluid
-      className="services-section  pb-5 mx-2 border-yellow yellow-left"
+      className="services-section  pb-5 mx-md-2 border-yellow yellow-left"
     >
       <div className=" row">
         <Col className=" services-text" md={12}>

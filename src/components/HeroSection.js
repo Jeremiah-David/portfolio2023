@@ -8,32 +8,18 @@ export default function HeroSection() {
     <>
       <Container fluid className="hero-section p-4">
         <Row className="p-5  text-center justify-items-center row d-flex align-self-center hero-row">
-          {/* <Col md={6}>
-          <div className="content-section ">
-            {" "}
-            <h3 className="display-5 p-1">Tech Skills and Stacks </h3>
-            <h4 className="p-2">
-              HTML5 | CSS3 | JavaScript | React | Next | Content Management
-              Systems | AWS EC2 S3 RDS | SQL | MongoDB | Excel | Tableau | MERN
-              Stack | Front End | Back End
-            </h4>
-            <h3 className="display-5 p-1">Team Skills</h3>
-            <h4 className="p-2">
-              Skills Cross-cultural communication and team communication |
-              Empathy | Emotional intelligence | Ability to effectively
-              collaborate | Adaptability | Problem-solving | Critical thinking
-            </h4>
-          </div>
-        </Col> */}
+          <Col className="text-start m-md-auto mt-3 mt-md-auto" md={7}>
+            <h1>Willamette Valley Foundry</h1>
 
-          <Col className="text-start m-auto" md={7}>
-            <h3 className="display-6  ">Welcome Friend</h3>
-            <h4 className="display-6  ">
+            <h4 className="">
               I{"'"}m Jeremiah. I build, deploy, and manage websites and web
-              applications, teach, and mentor. Let{"'"}s make somthing great.
+              applications, teach, and mentor. If you have a small business site
+              that needs created and launched, need a tech mentor, need a
+              skilled Full Stack Engineer on a large project, or anything in
+              between, I{"'"}d love to connect!
             </h4>
-            <a href="#contact">
-              <button type="button" class="btn contact-button">
+            <a href="#contact d-md-none">
+              <button type="button" class="btn contact-button  d-md-none pt-3">
                 Contact Me
               </button>
             </a>

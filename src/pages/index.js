@@ -28,7 +28,6 @@ export default function Home() {
       <main className={styles.main}>
         <NavBar />
         <Container fluid>
-          {" "}
           <Row className="index-row">
             <Col md={5} fluid className="hero-wrapper">
               <HeroSection />
